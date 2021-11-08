@@ -1,0 +1,50 @@
+package assignment;
+
+import java.util.Scanner;
+public class Assignment1B {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 
+		Scanner sc = new Scanner(System.in);
+		int num, quan1, quan2, quan3;
+		double price1, price2, price3, total, discount = 0, pay;
+		
+		System.out.print("Enter the number of items: ");
+		num = sc.nextInt();
+		
+	
+		System.out.print("Enter the price of Item: RM ");
+		price1 = sc.nextDouble();
+		
+		System.out.print("Enter the quantity of item:");
+		quan1 = sc.nextInt();
+		
+		System.out.print("Enter the price second of Item: RM ");
+		price2 = sc.nextDouble();
+		
+		System.out.print("Enter the quantity second of item: ");
+		quan2 = sc.nextInt();
+		
+		System.out.print("Enter the price of third Item: RM ");
+		price3 = sc.nextDouble();
+		
+		System.out.print("Enter the quantity third of item: ");
+		quan3 = sc.nextInt();
+		
+		total = (price1*quan1)+(price2*quan2)+(price3*quan3);
+		
+		if(total>100) {
+			discount = total*0.2;
+		}
+		pay = total - discount;
+	    
+		System.out.print("Total price: RM "+total);
+		System.out.println();
+		System.out.print("Discount received: RM "+discount);
+		System.out.println();
+		System.out.print("Price to be paid: RM "+pay);
+		
+		
+	}
+}
